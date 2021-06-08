@@ -15,10 +15,10 @@ PRIMARY KEY(rollno)
 );
 CREATE TABLE recordsh 
 ( id INT NOT NULL AUTO_INCREMENT , 
-fromw VARCHAR(255) NOT NULL ,  
-rollno VARCHAR NOT NULL , 
-forw VARCHAR(255) NOT NULL , 
-rupees INT NOT NULL , 
+fromw VARCHAR(255) ,  
+rollno VARCHAR(255) , 
+forw VARCHAR(255)  , 
+rupees INT , 
 PRIMARY KEY (id),
 FOREIGN KEY(rollno) REFERENCES students(rollno)
 );
